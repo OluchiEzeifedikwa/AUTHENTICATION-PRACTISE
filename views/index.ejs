@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <h1>ODIN MEMBERS ONLY</h1>
+
+  <nav class="navbar">
+    <a href="/log-in">Login</a> 
+    <i class="fa fa-sign-in"></i><a href="/sign-up">Signup</a> 
+  </nav>
+
+  
+  
+  <% if (locals.user) {%>
+    <h1>WELCOME BACK<%- include('users.ejs') %></h1>
+    <a href="/log-out">Log-out</a>
+    <a href="/createMessage">Create A Message</a>
+  <% } else { %>
+    
+  <% } %>
+  
+  
+
+
+<h1 class="header2">Odin Members' Messages </h1>
+
+  
+     
+</body>
+</html>
